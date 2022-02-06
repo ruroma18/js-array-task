@@ -84,7 +84,8 @@ const usersMap = [
 
 const usersWithTelephoneNumber = usersMap.map(function (userItem, i, arr) {
   if (userItem) {
-    return {...userItem, telephoneNumber: 12345}
+    return { firstName: userItem.firstName, lastName: userItem.lastName, 
+      age: userItem.age, gender: userItem.gender, telephoneNumber: 12345 };
   }
 })
 
